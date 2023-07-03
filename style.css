@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.navBar{
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: black;
+    color: antiquewhite;
+    margin: 0 auto;
+    border-bottom: 0.1px solid antiquewhite;
+}
+
+.navBarElements{
+    display: flex;
+    align-items: center;
+}
+
+.navBarElements ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBarElements ul li{
+    margin-right: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    
+}
+
+.navBarElements ul li:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.liButton{
+    background-color: antiquewhite;
+    color: black;
+    padding: 2px;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    width: 6em;
+    text-align: center;
+}
+
+.liButton:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: antiquewhite;
+}
+
+.logo{
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.logo-remove{
+    width: 40px;
+}
+
+span{
+    color: rgb(228, 219, 190);
+}
+
+section{
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    color: antiquewhite;
+    z-index: -2;
+}
+
+.textContainer{
+    width: 300px;
+    margin-top: 3em;
+    z-index: 1;
+}
+
+.fotoContainer{
+    position: relative;
+    top: 30px;
+    height: 400px;
+}
+
+.foto{
+    width: 400px;
+    z-index: -1;
+    transition: 0.4s;
+}
+
+/*Botones*/
+.colorsContainer{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.Button{
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    border: none;
+    transition: all 0.2s;
+}
+
+.Button:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    border: 0.5px solid antiquewhite;
+}
+
+.colors{
+    display: flex;
+    gap: 1em;
+    margin-top: 25px;
+}
+
+.blue{
+    background-color: rgb(132, 200, 245);
+
+}
+
+.gray{
+    background-color: gray;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+/*Text Container*/
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
+}
+
+h3,p{
+    font-size: small;
+}
+
+h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Responsive*/
+
+@media (max-width:800px) {
+    section{
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Mobile Styles */
+.hamburger {
+    display: none;
+  }
+  
+  /* Desktop Styles */
+  @media (max-width: 600px) {
+    .navBarElements {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      background-color: antiquewhite;
+    }
+  
+    .line {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin-bottom: 4px;
+    }
+  }
+
+  
